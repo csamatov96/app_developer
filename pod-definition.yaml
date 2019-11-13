@@ -1,0 +1,14 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: myapp-pod  #childrens of metadata
+  labels: #dictionary
+    app: myapp
+    created_by: Chyngyzkan
+
+spec:
+  containers: #it is a list / array
+    - name: nginx-container #u can have additional containers within a pod
+      image: nginx
